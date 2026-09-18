@@ -25,8 +25,8 @@ public:
     zc.begin();
     fan.begin();
     temp.begin();
-    storage.begin();
-
+// Tambahkan storage.begin() jika ingin mandiri 
+    
     uint16_t c0, c1, c2;
     storage.loadSiroccroCalibration(c0, c1, c2);
     calib.setTip(c0, c1, c2);
